@@ -3,7 +3,6 @@ import {BlurView} from '@react-native-community/blur';
 import {StyleSheet, View, ViewProps, ViewStyle} from 'react-native';
 
 export type GlassViewProps = ViewProps & {
-  blurAmount?: number;
   containerStyle?: ViewStyle;
   glassStyle?: ViewStyle;
 };

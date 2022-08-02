@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 
 export type GlassButtonProps = ViewProps & {
-  blurAmount?: number;
   containerStyle?: ViewStyle;
   glassStyle?: ViewStyle;
   onPress: () => void;

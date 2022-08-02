@@ -3,7 +3,6 @@ import {BlurView} from '@react-native-community/blur';
 import {StyleSheet, TextInput, View, ViewProps, ViewStyle} from 'react-native';
 
 export type GlassInputProps = ViewProps & {
-  blurAmount?: number;
   containerStyle?: ViewStyle;
   onChangeText: (text: string) => void;
   value: string;
