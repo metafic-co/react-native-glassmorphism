@@ -12,7 +12,7 @@ export type GlassInputProps = ViewProps & {
   placeholderTextColor?: string;
 };
 
-export const GlassInput = forwardRef<View, GlassInputProps>(
+export const GlassInput = forwardRef<TextInput, GlassInputProps>(
   (
     {
       glassStyle,
@@ -30,13 +30,13 @@ export const GlassInput = forwardRef<View, GlassInputProps>(
       <View style={containerStyle}>
         <BlurView
           {...rest}
-          ref={ref}
           blurType="light"
           blurAmount={10}
           reducedTransparencyFallbackColor="white"
           style={[glassStyle, styles.blurView]}
         >
           <TextInput
+            ref={ref}
             onChangeText={onChangeText}
             value={value}
             style={textInputStyle}

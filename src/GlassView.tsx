@@ -10,10 +10,9 @@ export type GlassViewProps = ViewProps & {
 export const GlassView = forwardRef<View, GlassViewProps>(
   ({children, glassStyle, containerStyle, ...rest}, ref) => {
     return (
-      <View style={containerStyle}>
+      <View style={containerStyle} ref={ref}>
         <BlurView
           {...rest}
-          ref={ref}
           blurType="light"
           blurAmount={10}
           reducedTransparencyFallbackColor="white"
