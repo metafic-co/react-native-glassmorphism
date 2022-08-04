@@ -1,6 +1,6 @@
 {
   "name": "@metafic-co/glassmorphism",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native Glassmorphism components",
   "react-native": "src/index",
   "source": "src/index",
