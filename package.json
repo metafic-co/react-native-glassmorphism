@@ -1,6 +1,6 @@
 {
-  "name": "@metafic-co/glassmorphism",
-  "version": "0.0.2",
+  "name": "@metafic-co/react-native-glassmorphism",
+  "version": "0.0.3",
   "description": "React Native Glassmorphism components",
   "react-native": "src/index",
   "source": "src/index",
@@ -12,13 +12,13 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
-  "repository": "https://github.com/metafic-co/glassmorphism",
+  "repository": "https://github.com/metafic-co/react-native-glassmorphism",
   "author": "Harsh Rathore <harsh@metafic.co> (https://github.com/HarshRat)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/metafic-co/glassmorphism/issues"
+    "url": "https://github.com/metafic-co/react-native-glassmorphism/issues"
   },
-  "homepage": "https://github.com/metafic-co/glassmorphism",
+  "homepage": "https://github.com/metafic-co/react-native-glassmorphism",
   "dependencies": {
     "@react-native-community/blur": "^4.1.0",
     "react": "18.0.0",
