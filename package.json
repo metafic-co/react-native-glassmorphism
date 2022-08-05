@@ -1,6 +1,6 @@
 {
   "name": "@metafic-co/react-native-glassmorphism",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "description": "React Native Glassmorphism components",
   "react-native": "src/index",
   "source": "src/index",
@@ -9,6 +9,7 @@
     "ios",
     "android"
   ],
+  "main": "src/index",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
