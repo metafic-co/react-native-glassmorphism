@@ -22,12 +22,12 @@ It's a wrapper around @react-native-community/blur to create basic React Native 
 1. You can install the library using yarn: 
 
 ```bash
-  yarn add @metafic-co/glassmorphism @react-native-community/blur
+  yarn add @metafic-co/react-native-glassmorphism @react-native-community/blur
 ```
  or npm:
 
 ```bash
-  npm install @metafic-co/glassmorphism @react-native-community/blur
+  npm install @metafic-co/react-native-glassmorphism @react-native-community/blur
 ```
 2. (iOS only) Install native dependencies:
 
@@ -39,14 +39,14 @@ It's a wrapper around @react-native-community/blur to create basic React Native 
 3. Include the library in your code:
 
 ```js
-  import {GlassView, GlassInput, GlassButton} from "@metafic-co/glassmorphism";
+  import {GlassView, GlassInput, GlassButton} from "@metafic-co/react-native-glassmorphism";
 ```
 
 
 ## Usage/Examples
 
 ```javascript
-import {GlassView} from '@metafic-co/glassmorphism'
+import {GlassView} from '@metafic-co/react-native-glassmorphism'
 import {View, Text} from 'react-native'
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
 ```
 
 ```javascript
-import {GlassButton} from '@metafic-co/glassmorphism'
+import {GlassButton} from '@metafic-co/react-native-glassmorphism'
 import {View, Text} from 'react-native'
 
 function App() {
@@ -76,7 +76,7 @@ function App() {
 ```
 
 ```javascript
-import {GlassInput} from '@metafic-co/glassmorphism'
+import {GlassInput} from '@metafic-co/react-native-glassmorphism'
 import {View} from 'react-native'
 import {useState} from 'react';
 
