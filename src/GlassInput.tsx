@@ -33,13 +33,13 @@ export const GlassInput = forwardRef<TextInput, GlassInputProps>(
     return (
       <View style={containerStyle}>
         <BlurView
-          {...rest}
           blurType={blurType || "light"}
           blurAmount={blurAmount || 10}
           reducedTransparencyFallbackColor="white"
           style={[glassStyle, styles.blurView]}
-        >
+          >
           <TextInput
+            {...rest}
             ref={ref}
             onChangeText={onChangeText}
             value={value}
