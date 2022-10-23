@@ -11,7 +11,7 @@ export type GlassButtonProps = ViewProps & {
 };
 
 export const GlassButton = forwardRef<TouchableOpacity, GlassButtonProps>(
-  ({children, glassStyle, containerStyle, onPress, blurType, blurAmount ...rest}, ref) => {
+  ({children, glassStyle, containerStyle, onPress, blurType, blurAmount, ...rest}, ref) => {
     return (
       <TouchableOpacity style={containerStyle} onPress={onPress} ref={ref}>
         <BlurView
