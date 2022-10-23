@@ -1,21 +1,23 @@
 import React, {forwardRef} from 'react';
-import {BlurView} from '@react-native-community/blur';
+import {BlurView, BlurViewProps} from '@react-native-community/blur';
 import {StyleSheet, TouchableOpacity, ViewProps, ViewStyle} from 'react-native';
 
 export type GlassButtonProps = ViewProps & {
   containerStyle?: ViewStyle;
   glassStyle?: ViewStyle;
   onPress: () => void;
+  blurType?: BlurViewProps.blurType;
+  blurAmount?: number;
 };
 
 export const GlassButton = forwardRef<TouchableOpacity, GlassButtonProps>(
-  ({children, glassStyle, containerStyle, onPress, ...rest}, ref) => {
+  ({children, glassStyle, containerStyle, onPress, blurType, blurAmount ...rest}, ref) => {
     return (
       <TouchableOpacity style={containerStyle} onPress={onPress} ref={ref}>
         <BlurView
           {...rest}
-          blurType="light"
-          blurAmount={10}
+          blurType={blurType || "light"}
+          blurAmount={blurAmount || 10}
           reducedTransparencyFallbackColor="white"
           style={[glassStyle, styles.blurView]}
         >
