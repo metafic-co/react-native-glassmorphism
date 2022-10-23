@@ -1,5 +1,5 @@
 
-![Logo](https://metafic.co/wp-content/uploads/2021/03/Metafic-Logo-Dark.png)
+![Logo](https://metafic.co/wp-content/uploads/2022/05/Metafic-Logo.svg)
 
 
 # React Native Glassmorphism
