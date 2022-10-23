@@ -1,5 +1,5 @@
 import React, {forwardRef} from 'react';
-import {BlurView} from '@react-native-community/blur';
+import {BlurView, BlurViewProps} from '@react-native-community/blur';
 import {StyleSheet, TextInput, View, ViewProps, ViewStyle} from 'react-native';
 
 export type GlassInputProps = ViewProps & {
@@ -10,6 +10,8 @@ export type GlassInputProps = ViewProps & {
   placeholder?: string;
   glassStyle?: ViewStyle;
   placeholderTextColor?: string;
+  blurType?: BlurViewProps.blurType;
+  blurAmount?: number;
 };
 
 export const GlassInput = forwardRef<TextInput, GlassInputProps>(
@@ -22,6 +24,8 @@ export const GlassInput = forwardRef<TextInput, GlassInputProps>(
       placeholder,
       value,
       placeholderTextColor,
+      blurType,
+      blurAmount,
       ...rest
     },
     ref,
@@ -30,8 +34,8 @@ export const GlassInput = forwardRef<TextInput, GlassInputProps>(
       <View style={containerStyle}>
         <BlurView
           {...rest}
-          blurType="light"
-          blurAmount={10}
+          blurType={blurType || "light"}
+          blurAmount={blurAmount || 10}
           reducedTransparencyFallbackColor="white"
           style={[glassStyle, styles.blurView]}
         >
